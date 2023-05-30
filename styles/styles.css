@@ -109,21 +109,23 @@ body {
 .form-menu {
   display: flex;
   width: 517px;
-  margin-right: 26px;
+  margin-right: 27px;
   align-self: flex-start;
 }
 
 .search-menu {
   padding: 10px 48px;
+  padding-left: 46px;
   border: 2px solid #000000;
-  border-right: transparent;
+  border-right: none;
   border-radius: 50px 0 0 50px;
   background-color: transparent;
   width: 359px;
+  height: 40px;
 
   background-image: url("../images/search-icon.svg");
   background-repeat: no-repeat;
-  background-position: 15px 12px;
+  background-position: 15px 10px;
 
   font-family: "rubik", sans-serif;
   font-size: 16px;
@@ -132,7 +134,7 @@ body {
 }
 
 .search-menu::placeholder {
-  opacity: 0.5;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .search-menu:focus-visible {
@@ -146,7 +148,9 @@ body {
 }
 
 .search-button {
-  padding: 10px 56px;
+  padding: 0;
+  display: block;
+  width: 160px;
   border: 2px solid #000000;
   cursor: pointer;
   border-radius: 0 50px 50px 0;
@@ -181,13 +185,17 @@ body {
 .sign-in-list {
   margin: 0;
   margin-top: 5px;
-  margin-right: 26px;
   padding: 0;
   width: 230px;
   display: flex;
   flex-wrap: wrap;
   align-self: flex-start;
   list-style: none;
+  gap: 10px 31px;
+}
+
+.index--sing-in {
+  width: unset;
 }
 
 .sign-in-item:nth-child(2) {
@@ -214,17 +222,12 @@ body {
   margin-left: 0;
 }
 
-.sign-in-item:nth-child(2n) {
-  margin-left: 31px;
-}
-
 .sign-in-icon {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  margin: auto;
 }
 
 .sign-in-link .sign-in-icon {
@@ -234,7 +237,7 @@ body {
 }
 
 .sign-in-link span {
-  padding-left: 24px;
+  padding-left: 26px;
 }
 
 /* Пользовательское меню */
@@ -243,47 +246,42 @@ body {
   margin-left: auto;
   justify-content: flex-end;
   padding: 0;
-  width: 243px;
+  width: 266px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  gap: 10px 35px;
 }
 
-/* .user-menu-item {
-  margin-left: 36px;
-} */
+.index--user-menu-list {
+  width: unset;
+}
 
 .user-menu-item:nth-child(2) {
   position: relative;
 }
 
-.user-menu-item:nth-child(1) {
-  margin-left: 0;
-}
-
-.user-menu-item:nth-child(2) {
-  margin-left: 37px;
-}
-
 .user-menu-icon {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
+  top: 5px;
   left: 0;
-  margin: auto;
+}
+
+.user-menu-item:nth-child(2) .user-menu-icon {
+  top: 2px;
+  left: -2px;
 }
 
 .user-menu-link {
   position: relative;
 }
 
-.user-menu-item:nth-child(1n) .user-menu-word {
-  padding-left: 22px;
+.user-menu-word {
+  padding-left: 21px;
 }
 
-.user-menu-item:nth-child(2n) .user-menu-word {
-  padding-left: 25px;
+.user-menu-item:nth-child(2) .user-menu-word {
+  padding-left: 27px;
 }
 
 .user-menu-link:hover {
@@ -308,16 +306,10 @@ body {
   height: 21px;
   background-color: #ffffff;
   position: absolute;
-  top: 2px;
-  left: -16px;
+  top: 1px;
+  left: -17px;
   border-radius: 50%;
   font-size: 14px;
-}
-
-.user-menu-link .user-menu-icon {
-  right: auto;
-  left: 0;
-  margin: auto 0;
 }
 
 /* Поповер корзины */
@@ -554,6 +546,7 @@ body {
   display: inline-block;
   padding-top: 15px;
   padding-right: 57px;
+  font-size: 19px;
   line-height: 21px;
   color: #000000;
   background-color: #ffe17f;
@@ -564,7 +557,7 @@ body {
 
 .toggler-icon {
   border: 2px solid #000000;
-  padding: 16px;
+  padding: 15px;
   border-radius: 50%;
   opacity: 30%;
   position: absolute;
@@ -655,30 +648,23 @@ body {
 .navigation-menu {
   margin: 0;
   padding: 0;
-  margin-left: 274px;
+  margin-left: auto;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   position: relative;
   z-index: 2;
-  width: 474px;
+  min-width: 471px;
   min-height: 20px;
+  gap: 10px 41px;
 }
 
-.navigation-item {
-  margin-bottom: 8px;
+.navigation-item:nth-child(2) {
+  transform: translateX(1px);
 }
 
-.navigation-item:nth-child(1n) {
-  margin-right: 51px;
-}
-
-.navigation-item:nth-child(2n) {
-  margin-right: 53px;
-}
-
-.navigation-item:nth-child(3n) {
-  margin-right: 0;
+.navigation-item:nth-child(3) {
+  transform: translateX(8px);
 }
 
 .sign-in-link,
@@ -693,6 +679,7 @@ body {
 }
 
 .navigation-link {
+  font-size: 19px;
   line-height: 21px;
   color: #000000;
   background-color: #ffe17f;
