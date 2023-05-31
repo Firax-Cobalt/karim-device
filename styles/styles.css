@@ -1723,7 +1723,7 @@ body {
 .footer-device-link {
   display: block;
   margin-top: 62px;
-  margin-bottom: 35px;
+  margin-bottom: 31px;
   width: 145px;
 }
 
@@ -1747,6 +1747,7 @@ body {
 .footer-address-text {
   margin: 0;
   font-family: "rubik", sans-serif;
+  font-size: 16px;
   font-weight: 400;
   line-height: 20px;
 }
@@ -1764,6 +1765,7 @@ body {
 .footer-menu {
   margin-top: 137px;
   width: 444px;
+  margin-left: -60px;
 }
 
 .footer-menu-list {
@@ -1774,13 +1776,15 @@ body {
   list-style: none;
   font-size: 18px;
   line-height: 21px;
-  letter-spacing: 2px;
+  letter-spacing: 3.6px;
+  width: 485px;
+  gap: 10px 32px;
 }
 
-.footer-menu-item {
+/* .footer-menu-item {
   margin-right: 45px;
   margin-bottom: 10px;
-}
+} */
 
 .footer-menu-item:nth-child(3n) {
   margin-right: 0;
@@ -1816,7 +1820,8 @@ body {
 
 /* Подвал социальные сети */
 .footer-social-list {
-  margin: 62px 147px 0;
+  margin: 56px 147px 0;
+  margin-left: 147px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -1871,6 +1876,15 @@ body {
   padding: 14px 13px;
 }
 
+.footer-social-item:nth-child(2) svg {
+  padding-top: 15px;
+  padding-left: 12px;
+}
+
+.footer-social-item:nth-child(3) svg {
+  padding-top: 13px;
+}
+
 /* Подвал номер телефона */
 .footer-contacts-phone {
   margin-top: 140px;
@@ -1884,6 +1898,7 @@ body {
   font-family: "rubik", sans-serif;
   font-weight: 400;
   line-height: 20px;
+  letter-spacing: 0.2px;
 }
 
 .footer-phone:hover {
@@ -1900,7 +1915,7 @@ body {
 }
 
 .footer-htmlacademy-link {
-  margin-left: 60px;
+  margin-left: 63px;
   display: block;
 }
 
