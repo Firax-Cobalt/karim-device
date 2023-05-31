@@ -1119,7 +1119,7 @@ body {
 .advantages-container-3 {
   background-image: url("../images/advantages/advantages-3.svg");
   background-repeat: no-repeat;
-  background-position: 976px 11px;
+  background-position: 976px 10px;
 }
 
 .advantages-list {
@@ -1209,6 +1209,10 @@ body {
   background-color: transparent;
 }
 
+.advantages-button-1 span {
+  padding-left: 4px;
+}
+
 .advantages-button-2 {
   padding: 0;
   padding-left: 3px;
@@ -1267,6 +1271,15 @@ body {
 
 .advantages-button-3:focus-visible {
   outline: 2px solid #af4fff;
+}
+
+.advantages-button-current--3 {
+  height: 41px;
+}
+
+.advantages-button-current--3 span {
+  margin-top: 1px;
+  margin-left: 14px;
 }
 
 .advantages-description {
