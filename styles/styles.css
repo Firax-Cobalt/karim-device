@@ -186,12 +186,12 @@ body {
   margin: 0;
   margin-top: 5px;
   padding: 0;
-  width: 230px;
+  width: 232px;
   display: flex;
   flex-wrap: wrap;
   align-self: flex-start;
   list-style: none;
-  gap: 10px 31px;
+  gap: 10px 30px;
 }
 
 .index--sing-in {
@@ -258,7 +258,12 @@ body {
 }
 
 .user-menu-item:nth-child(2) {
+  margin-right: 2px;
   position: relative;
+}
+
+.index--user-menu-list .user-menu-item:nth-child(2) {
+  margin-right: 0px;
 }
 
 .user-menu-icon {
@@ -315,14 +320,14 @@ body {
 /* Поповер корзины */
 .popover {
   position: absolute;
-  top: 40px;
-  left: -144px;
+  top: 36px;
+  left: -142px;
   z-index: 3;
   display: none;
 }
 
 .popover-open {
-  display: none;
+  display: block;
 }
 
 .popover-arrow {
@@ -330,12 +335,12 @@ body {
   margin: 0 auto;
   position: absolute;
   top: -6px;
-  left: 154px;
+  left: 153px;
 }
 
 .popover-content {
   width: 320px;
-  min-height: 200px;
+  min-height: 301px;
   color: #ffffff;
   box-sizing: border-box;
   font-family: "rubik", sans-serif;
@@ -351,10 +356,16 @@ body {
 
 .cart-item {
   padding: 20px;
+  height: 84px;
+  box-sizing: border-box;
   position: relative;
   display: grid;
   grid-template-columns: 62px auto 20px;
   grid-template-rows: auto;
+}
+
+.cart-item + .cart-item {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .cart-link {
@@ -476,8 +487,13 @@ body {
 }
 
 .popover-button {
-  padding: 15px 25px;
+  padding: 14px 25px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  padding-left: 26px;
+  padding-right: 20px;
   display: block;
+  box-sizing: border-box;
   background-color: #ffffff;
   color: #000000;
   font: inherit;
@@ -486,7 +502,7 @@ body {
   line-height: 21px;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 3.3px;
 }
 
 .popover-button:hover {
@@ -506,6 +522,11 @@ body {
   opacity: 97%;
   pointer-events: none;
 }
+
+/* .popover-button span {
+  padding-top: 2px;
+  padding-left: 2px;
+} */
 
 /* Посмотреть ещё товары */
 .second-menu-container {
@@ -589,12 +610,13 @@ body {
   padding: 33px 60px 27px;
   box-sizing: border-box;
   position: absolute;
-  top: 30px;
+  top: 31px;
   left: -60px;
   width: 1160px;
   min-height: 180px;
   background-color: #ffe17f;
   z-index: -1;
+  min-height: 220px;
 }
 
 .submenu-list {
@@ -619,7 +641,7 @@ body {
 }
 
 .submenu-item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .submenu-link {
@@ -657,6 +679,10 @@ body {
   min-width: 471px;
   min-height: 20px;
   gap: 10px 41px;
+}
+
+.catalog--navigation-menu {
+  margin-left: 276px;
 }
 
 .navigation-item:nth-child(2) {
@@ -1144,7 +1170,7 @@ body {
 .vertical-line {
   position: absolute;
   top: -55px;
-  left: 279px;
+  left: 280px;
   width: 7px;
   height: 319px;
   background-color: #000000;
@@ -1781,11 +1807,6 @@ body {
   gap: 10px 32px;
 }
 
-/* .footer-menu-item {
-  margin-right: 45px;
-  margin-bottom: 10px;
-} */
-
 .footer-menu-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -1896,6 +1917,7 @@ body {
   display: block;
   margin-bottom: 63px;
   font-family: "rubik", sans-serif;
+  font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0.2px;
@@ -1959,12 +1981,13 @@ body {
   width: 920px;
   min-height: 568px;
   border: 10px solid #000000;
-  padding: 72px 80px;
+  padding: 60px 70px;
 }
 
 .modal-title {
   margin: 0;
-  margin-bottom: 42px;
+  margin-top: 3px;
+  margin-bottom: 41px;
   font: inherit;
   font-size: 50px;
   line-height: 50px;
@@ -1984,8 +2007,8 @@ body {
 
 .modal-close-button svg {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -10px;
+  right: -11px;
 }
 
 .modal-close-button:hover {
@@ -2003,7 +2026,7 @@ body {
 .modal-wrapper-inputs {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 }
 
 .field-group {
@@ -2017,6 +2040,9 @@ body {
   font-family: "rubik", sans-serif;
   font-weight: 700;
   margin-bottom: 14px;
+  font-size: 17.5px;
+  font-weight: 700;
+  line-height: 20px;
 }
 
 .modal-input {
@@ -2067,10 +2093,10 @@ body {
 }
 
 .field-group:last-child .modal-input {
-  background-color: #ebebeb;
   background-image: url("../images/message-icon.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 18px center;
+  padding-left: 19px;
 }
 
 .field-group:last-child .modal-input:placeholder-shown {
@@ -2093,6 +2119,7 @@ body {
 }
 
 .modal-text-mail {
+  padding-top: 2px;
   font-family: "rubik", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -2106,7 +2133,7 @@ body {
 }
 
 .modal-wrapper-import .modal-input {
-  width: 520px;
+  width: 540px;
   height: 60px;
 }
 
@@ -2139,7 +2166,7 @@ body {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  margin-left: 8px;
+  margin-left: 9px;
   position: relative;
   top: -3px;
   cursor: pointer;
@@ -2230,6 +2257,18 @@ body {
   background-color: rgba(240, 240, 240, 1);
 }
 
+.amount-button-put-away svg {
+  position: absolute;
+  top: 29px;
+  left: 22px;
+}
+
+.amount-button-add svg {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+}
+
 .amount-input {
   padding: 20px 15px;
   box-sizing: border-box;
@@ -2274,9 +2313,14 @@ body {
   font-family: "raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
-  font-size: 18px;
+  font-size: 19px;
   text-transform: uppercase;
-  letter-spacing: 2.5px;
+  letter-spacing: 2.8px;
+}
+
+.modal-button-submit span {
+  padding-top: 1px;
+  padding-left: 2px;
 }
 
 .modal-button-submit:focus-visible {
@@ -2299,22 +2343,21 @@ body {
   flex-direction: column;
 }
 
+/* Заголовок страницы каталога */
 .inner-header-title {
+  margin-top: 36px;
+  margin-left: 60px;
+  margin-bottom: 6px;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
-}
-
-/* Заголовок страницы каталога */
-.inner-header-title {
-  margin-top: 35px;
-  margin-bottom: 6px;
 }
 
 /* Хлебные крошки */
 .breadcrumbs {
   margin: 0;
   margin-bottom: 34px;
+  margin-left: 60px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -2325,8 +2368,8 @@ body {
 }
 
 .breadcrumbs-item {
-  margin-top: 10px;
-  margin-right: 34px;
+  margin-top: 9px;
+  margin-right: 36px;
   position: relative;
 }
 
@@ -2337,8 +2380,8 @@ body {
 
 .breadcrumbs-arrow {
   position: absolute;
-  top: 7px;
-  right: -19px;
+  top: 6px;
+  right: -20px;
 }
 
 .breadcrumbs-item:last-child .breadcrumbs-arrow {
@@ -2369,16 +2412,18 @@ body {
 }
 
 .filter-container {
+  box-sizing: border-box;
+  padding-left: 60px;
   width: 320px;
 }
 
 .filter-title {
   margin-top: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 58px;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-transform: uppercase;
 }
 
@@ -2389,14 +2434,28 @@ body {
   border: none;
 }
 
+.filter-group:nth-child(2) {
+  margin-bottom: 32px;
+}
+
+.filter-group:nth-child(3) .filter-group-title {
+  padding-top: 12px;
+}
+
 .filter-group-title {
   margin-bottom: 20px;
+  margin-left: -1px;
   padding-top: 12px;
   border-top: 2px solid #000000;
-  width: 200px;
+  width: 197px;
+  letter-spacing: -0.2px;
 }
 
 /* Стоимость товара, диапазон */
+.range {
+  margin-top: 8px;
+}
+
 .range-scale {
   position: relative;
   width: 200px;
@@ -2451,14 +2510,15 @@ body {
 .catalog-filter-label {
   display: flex;
   margin-right: 68px;
-  opacity: 30%;
+  opacity: 40%;
   color: rgba(0, 0, 0, 1);
   font-family: "rubik", sans-serif;
-  font-size: 14px;
+  font-size: 13.5px;
 }
 
 .catalog-filter-label:first-child {
   margin-right: 30px;
+  margin-left: -1px;
 }
 
 .catalog-filter-label:last-child {
@@ -2521,6 +2581,7 @@ body {
 
 .filter-color-item:not(:last-child) {
   margin-bottom: 17px;
+  margin-top: -1px;
 }
 
 .control-mark {
@@ -2528,11 +2589,11 @@ body {
   box-sizing: border-box;
   position: absolute;
   left: 0;
-  top: 2px;
+  top: 1px;
   width: 20px;
   height: 20px;
   border-radius: 3px;
-  border: 3px solid #cccccc;
+  border: 2px solid #cccccc;
   background-color: rgba(240, 240, 240, 1);
   z-index: 2;
 }
@@ -2541,6 +2602,7 @@ body {
   font-family: "rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 20px;
 }
 
 .control-mark:focus-visible {
@@ -2569,7 +2631,7 @@ body {
 
 /* bluetooth Фильтр */
 .filter-bluetooth-item:not(:last-child) {
-  margin-bottom: 17px;
+  margin-bottom: 18px;
 }
 
 .control-input-bluetooth {
@@ -2611,13 +2673,17 @@ body {
   font-weight: 800;
   line-height: 21px;
   color: #000000;
-  letter-spacing: 3px;
+  letter-spacing: 3.6px;
   text-decoration: none;
   text-transform: uppercase;
   border: 0;
   cursor: pointer;
   font-size: 18px;
   background-color: transparent;
+}
+
+.button-filter span {
+  padding-left: 3px;
 }
 
 .button-filter:active {
@@ -2642,7 +2708,7 @@ body {
 
 .sorting-title {
   margin: 0;
-  font-size: 16px;
+  font-size: 16.2px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -2670,6 +2736,7 @@ body {
 }
 
 .select-control {
+  margin-left: -1px;
   display: block;
   width: 100%;
   border: none;
@@ -2834,7 +2901,7 @@ body {
   font-family: "rubik", sans-serif;
   font-weight: 700;
   font-size: inherit;
-  letter-spacing: -1px;
+  letter-spacing: -0.3px;
   color: #000000;
   opacity: 1;
   pointer-events: none;
@@ -2851,6 +2918,7 @@ body {
 }
 
 .product-card-price {
+  margin-top: 1px;
   font-family: "rubik", sans-serif;
   font-weight: 400;
   line-height: 21px;
@@ -2885,10 +2953,14 @@ body {
   font-family: "raleway", sans-serif;
   font-size: 16px;
   font-weight: 800;
-  letter-spacing: 2.7px;
+  letter-spacing: 3.3px;
   text-transform: uppercase;
   cursor: pointer;
   background-color: #ffffff;
+}
+
+.product-show-more span {
+  padding-left: 3px;
 }
 
 .product-show-more:hover {
@@ -2924,10 +2996,10 @@ body {
   align-self: center;
   font-weight: 800;
   line-height: 21px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
+  color: rgba(68, 68, 68, 1);
   opacity: 30%;
 }
 
@@ -2959,6 +3031,7 @@ body {
   font-family: "rubik", sans-serif;
   width: 40px;
   height: 40px;
+  font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: #444444;
@@ -2976,9 +3049,11 @@ body {
   display: block;
   box-sizing: border-box;
   padding: 10px 15px;
+  padding-left: 13px;
   font-family: "rubik", sans-serif;
   width: 40px;
   height: 40px;
+  font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: #444444;
@@ -2986,8 +3061,12 @@ body {
   text-decoration: none;
 }
 
+.pagination-item:nth-child(4) .pagination-link {
+  padding-left: 12px;
+}
+
 .pagination-item:last-child .pagination-link {
-  padding-left: 11px;
+  padding-left: 10px;
 }
 
 .pagination-link:hover {
@@ -3007,11 +3086,12 @@ body {
 .pagination-next {
   display: block;
   padding: 25px;
+  padding-right: 22px;
   margin-left: auto;
   align-self: center;
   font-weight: 800;
   line-height: 21px;
-  letter-spacing: 3px;
+  letter-spacing: 3.5px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
