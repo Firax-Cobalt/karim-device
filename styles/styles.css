@@ -327,7 +327,7 @@ body {
 }
 
 .popover-open {
-  display: block;
+  display: none;
 }
 
 .popover-arrow {
@@ -761,6 +761,10 @@ body {
   width: 100%;
 }
 
+.slider-controls-2 {
+  top: 210px;
+}
+
 .slider-button {
   width: 20px;
   height: 60px;
@@ -806,6 +810,14 @@ body {
   font-size: 180px;
   font-weight: 700;
   color: #ffffff;
+}
+
+.description-number-02 {
+  transform: translate(269px, -62px);
+}
+
+.description-number-03 {
+  transform: translate(269px, -62px);
 }
 
 .gallery-description {
@@ -908,7 +920,7 @@ body {
 }
 
 .distance-container-3 {
-  gap: 40px;
+  gap: 41px;
 }
 
 .distance-title,
@@ -952,7 +964,7 @@ body {
 }
 
 .indicators-list-2 {
-  bottom: -5px;
+  bottom: 30px;
 }
 
 .indicators-list-3 {
