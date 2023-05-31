@@ -1281,16 +1281,18 @@ body {
 
 .background-truck svg {
   padding: 34px 39px;
+  padding-top: 35px;
 }
 
 .delivery-title {
   margin: 0;
-  padding-top: 40px;
+  margin-left: 4px;
+  padding-top: 42px;
   padding-bottom: 40px;
   font-weight: 800;
   font-size: 20px;
   line-height: 20px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   text-transform: uppercase;
 }
 
