@@ -965,10 +965,6 @@ body {
 }
 
 /* Список категорий товаров */
-/* .container-category {
-  margin: 0 auto;
-  width: 1061px;
-} */
 
 .category {
   margin-bottom: 70px;
@@ -976,7 +972,7 @@ body {
 
 .category-list {
   margin: 0;
-  margin-bottom: 172px;
+  margin-bottom: 184px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -1073,7 +1069,7 @@ body {
 
   background-image: url("../images/advantages/advantages-1.svg");
   background-repeat: no-repeat;
-  background-position: 95% 22px;
+  background-position: 961px 22px;
 }
 
 .advantages-container-2 {
@@ -1090,7 +1086,7 @@ body {
 
 .advantages-list {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 9px;
   padding: 0;
   list-style: none;
   font-weight: 800;
@@ -1108,7 +1104,7 @@ body {
   padding: 0;
   display: block;
   width: 280px;
-  height: 41px;
+  height: 40px;
   border: none;
   cursor: pointer;
   background-color: #000000;
@@ -1117,13 +1113,15 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
-  letter-spacing: 3px;
+  letter-spacing: 3.5px;
   text-transform: uppercase;
   transition: transform 0.255s ease-in-out;
   position: relative;
 }
 
 .advantages-button-current span {
+  margin-top: -1px;
+  margin-left: -1px;
   position: absolute;
   top: 10px;
   left: 20px;
@@ -1146,7 +1144,7 @@ body {
 .vertical-line {
   position: absolute;
   top: -55px;
-  left: 274px;
+  left: 279px;
   width: 7px;
   height: 319px;
   background-color: #000000;
@@ -1163,8 +1161,8 @@ body {
   font-family: "raleway", sans-serif;
   font-weight: 800;
   line-height: 21px;
+  letter-spacing: 3.5px;
   color: #000000;
-  letter-spacing: 3px;
   text-decoration: none;
   text-transform: uppercase;
   border: 0;
@@ -1175,6 +1173,7 @@ body {
 
 .advantages-button-2 {
   padding: 0;
+  padding-left: 3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1185,7 +1184,7 @@ body {
   font-weight: 800;
   line-height: 21px;
   color: #000000;
-  letter-spacing: 3px;
+  letter-spacing: 3.5px;
   text-decoration: none;
   text-transform: uppercase;
   border: 0;
@@ -1204,6 +1203,7 @@ body {
 
 .advantages-button-3 {
   padding: 0;
+  padding-left: 3px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1214,7 +1214,7 @@ body {
   font-weight: 800;
   line-height: 21px;
   color: #000000;
-  letter-spacing: 3px;
+  letter-spacing: 3.5px;
   text-decoration: none;
   text-transform: uppercase;
   border: 0;
@@ -1235,6 +1235,7 @@ body {
   width: 568px;
   position: relative;
   bottom: -18px;
+  left: 7px;
 }
 
 .advantages-title {
