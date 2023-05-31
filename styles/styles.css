@@ -847,7 +847,7 @@ body {
   position: absolute;
 
   transition: transform 0.255s ease-in;
-  transform: scaleY(0.17);
+  transform: scaleY(0.2);
 
   background-color: #ffe17f;
   z-index: -1;
@@ -1370,11 +1370,12 @@ body {
 
 .about-us-list {
   margin: 0;
-  margin-left: 16px;
+  margin-left: 38px;
+  margin-bottom: 30px;
   padding: 0;
   font-family: "rubik", sans-serif;
   font-weight: 700;
-  letter-spacing: -2%;
+  list-style-type: none;
 }
 
 .about-us-list li {
@@ -1382,12 +1383,25 @@ body {
   color: #ffc700;
 }
 
-.about-us-list li:last-child {
-  margin-bottom: 40px;
-}
-
 .about-us-list span {
   color: #000000;
+}
+
+.about-us-item {
+  position: relative;
+  letter-spacing: -0.3px;
+}
+
+.about-us-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: -35px;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 199, 0, 1);
+  border-radius: 50%;
 }
 
 .about-us-button {
@@ -1400,7 +1414,7 @@ body {
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 2.5px;
+  letter-spacing: 3.7px;
 
   padding: 0;
   font-family: "raleway", sans-serif;
@@ -1410,6 +1424,10 @@ body {
   cursor: pointer;
   font-size: 18px;
   background-color: transparent;
+}
+
+.about-us-button span {
+  padding-left: 4px;
 }
 
 .about-us-button:active {
@@ -1482,6 +1500,7 @@ body {
   font-weight: 400;
   line-height: 30px;
   color: #444444;
+  letter-spacing: 0.1px;
 }
 
 .contacts-phone:hover {
@@ -1499,7 +1518,7 @@ body {
 
 .contacts-schedule {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   padding: 0;
   list-style: none;
   font-family: "rubik", sans-serif;
@@ -1511,14 +1530,14 @@ body {
 .contacts-button {
   display: flex;
   flex-direction: column;
-  width: 270px;
+  width: 259px;
   min-height: 40px;
   justify-content: center;
   align-items: center;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 2.5px;
+  letter-spacing: 3.5px;
 
   padding: 0;
   font-family: "raleway", sans-serif;
@@ -1528,6 +1547,10 @@ body {
   cursor: pointer;
   font-size: 18px;
   background-color: transparent;
+}
+
+.contacts-button span {
+  padding-left: 3px;
 }
 
 .contacts-button:active {
