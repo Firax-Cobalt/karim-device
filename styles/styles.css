@@ -616,7 +616,6 @@ body {
   min-height: 180px;
   background-color: #ffe17f;
   z-index: -1;
-  min-height: 220px;
 }
 
 .submenu-list {
@@ -805,19 +804,20 @@ body {
 /* Описание товаров */
 .description-number {
   display: block;
-  transform: translate(300px, -62px);
+  transform: translate(300px, -67px);
   font-family: "rubik", sans-serif;
   font-size: 180px;
   font-weight: 700;
+  line-height: 30px;
   color: #ffffff;
 }
 
 .description-number-02 {
-  transform: translate(269px, -62px);
+  transform: translate(269px, -68px);
 }
 
 .description-number-03 {
-  transform: translate(269px, -62px);
+  transform: translate(269px, -67px);
 }
 
 .gallery-description {
@@ -827,7 +827,7 @@ body {
 }
 
 .gallery-description-group {
-  transform: translate(1px, -48px);
+  transform: translate(1px, -58px);
   margin: 0;
 }
 
@@ -846,7 +846,7 @@ body {
 }
 
 .gallery-description-link {
-  margin-top: 2px;
+  margin-top: -8px;
   display: flex;
   flex-direction: column;
   width: 220px;
@@ -1774,6 +1774,7 @@ body {
 .footer-device-link {
   display: block;
   margin-top: 62px;
+  margin-left: 1px;
   margin-bottom: 31px;
   width: 145px;
 }
@@ -1806,7 +1807,8 @@ body {
 .footer-address-text::after {
   content: "";
   display: block;
-  margin-top: 64px;
+  margin-top: 63px;
+  margin-left: 1px;
   background-color: #ffc700;
   width: 80px;
   height: 7px;
@@ -1962,7 +1964,7 @@ body {
 }
 
 .footer-htmlacademy-link {
-  margin-left: 63px;
+  margin-left: 64px;
   display: block;
 }
 
