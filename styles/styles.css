@@ -1179,15 +1179,6 @@ body {
   outline-offset: 2px;
 }
 
-.vertical-line {
-  position: absolute;
-  top: -55px;
-  left: 280px;
-  width: 7px;
-  height: 319px;
-  background-color: #000000;
-}
-
 .advantages-button-1 {
   padding: 0;
   display: flex;
@@ -1280,6 +1271,17 @@ body {
 .advantages-button-current--3 span {
   margin-top: 1px;
   margin-left: 14px;
+}
+
+.advantages-description::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -73px;
+  left: -7px;
+  width: 7px;
+  height: 319px;
+  background-color: #000000;
 }
 
 .advantages-description {
