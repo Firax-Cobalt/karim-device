@@ -523,10 +523,10 @@ body {
   pointer-events: none;
 }
 
-/* .popover-button span {
+.popover-button span {
   padding-top: 2px;
   padding-left: 2px;
-} */
+}
 
 /* Посмотреть ещё товары */
 .second-menu-container {
@@ -2586,18 +2586,21 @@ body {
   position: relative;
   display: block;
   padding-left: 36px;
+}
+
+.control-input ~ span {
   cursor: pointer;
 }
 
-.control:hover {
+.control-input:hover ~ span {
   opacity: 60%;
 }
 
-.control:active {
+.control-input:active ~ span {
   opacity: 30%;
 }
 
-.control[disabled] {
+.control-input:disabled ~ span {
   opacity: 10%;
   pointer-events: none;
 }
@@ -2621,7 +2624,6 @@ body {
   height: 20px;
   border-radius: 3px;
   border: 2px solid #cccccc;
-  background-color: rgba(240, 240, 240, 1);
   z-index: 2;
 }
 
@@ -2646,6 +2648,7 @@ body {
 
 .control-input {
   position: absolute;
+  visibility: hidden;
   top: 2px;
   left: 0;
   z-index: 1;
