@@ -957,12 +957,11 @@ body {
 /* Индикатор слайдера */
 .indicators--wrapper {
   display: flex;
-  width: 1160px;
+  width: 100%;
   justify-content: center;
   margin: 0 auto;
   position: absolute;
   top: 728px;
-  left: 372px;
 }
 
 .indicators-list {
