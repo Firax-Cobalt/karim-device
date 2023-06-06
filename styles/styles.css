@@ -811,6 +811,7 @@ body {
 }
 
 /* Описание товаров */
+
 .description-number {
   display: block;
   transform: translate(300px, -67px);
@@ -819,6 +820,7 @@ body {
   font-weight: 700;
   line-height: 30px;
   color: #ffffff;
+  position: absolute;
 }
 
 .description-number-02 {
@@ -837,7 +839,7 @@ body {
 }
 
 .gallery-description-group {
-  transform: translate(1px, -58px);
+  transform: translate(1px, -28px);
   margin: 0;
 }
 
@@ -856,7 +858,7 @@ body {
 }
 
 .gallery-description-link {
-  margin-top: -8px;
+  margin-top: 21px;
   display: flex;
   flex-direction: column;
   width: 220px;
@@ -878,7 +880,8 @@ body {
 }
 
 .gallery-description-link span {
-  padding-left: 2px;
+  margin-top: 1px;
+  margin-left: 3px;
 }
 
 /* Анимация кнопки */
@@ -923,7 +926,7 @@ body {
 }
 
 .distance-container {
-  margin-top: 31px;
+  margin-top: 33px;
   margin-bottom: 50px;
   display: flex;
   gap: 21px;
