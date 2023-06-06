@@ -1116,23 +1116,7 @@ body {
   display: flex;
   position: relative;
   bottom: 47px;
-
-  /* background-image: url("../images/advantages/advantages-1.svg");
-  background-repeat: no-repeat;
-  background-position: 961px 22px; */
 }
-
-/* .advantages-container-2 {
-  background-image: url("../images/advantages/advantages-2.svg");
-  background-repeat: no-repeat;
-  background-position: 961px 7px;
-}
-
-.advantages-container-3 {
-  background-image: url("../images/advantages/advantages-3.svg");
-  background-repeat: no-repeat;
-  background-position: 976px 10px;
-} */
 
 .advantages-list {
   margin: 0;
