@@ -1117,12 +1117,12 @@ body {
   position: relative;
   bottom: 47px;
 
-  background-image: url("../images/advantages/advantages-1.svg");
+  /* background-image: url("../images/advantages/advantages-1.svg");
   background-repeat: no-repeat;
-  background-position: 961px 22px;
+  background-position: 961px 22px; */
 }
 
-.advantages-container-2 {
+/* .advantages-container-2 {
   background-image: url("../images/advantages/advantages-2.svg");
   background-repeat: no-repeat;
   background-position: 961px 7px;
@@ -1132,7 +1132,7 @@ body {
   background-image: url("../images/advantages/advantages-3.svg");
   background-repeat: no-repeat;
   background-position: 976px 10px;
-}
+} */
 
 .advantages-list {
   margin: 0;
@@ -1319,7 +1319,23 @@ body {
   font-weight: 400;
   line-height: 30px;
   color: #444444;
-  min-width: 540px;
+  min-width: 479px;
+}
+
+.advantages-item svg {
+  position: absolute;
+  top: 4px;
+  right: -242px;
+}
+
+.advantages-item:nth-child(2) svg {
+  top: -11px;
+  right: -277px;
+}
+
+.advantages-item:nth-child(3) svg {
+  top: -8px;
+  right: -277px;
 }
 
 /* Редкий товар под заказ */
