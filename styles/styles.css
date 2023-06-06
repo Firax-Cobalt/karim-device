@@ -741,6 +741,15 @@ body {
   min-height: 350px;
 }
 
+.active {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inactive {
+  display: none;
+}
+
 .gallery-image {
   position: relative;
   bottom: 150px;
@@ -821,6 +830,7 @@ body {
 }
 
 .gallery-description {
+  margin-left: 40px;
   bottom: 30px;
   width: 560px;
   min-height: 400px;
@@ -946,6 +956,10 @@ body {
   display: flex;
   width: 1160px;
   justify-content: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 728px;
+  left: 372px;
 }
 
 .indicators-list {
@@ -955,8 +969,6 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  position: absolute;
-  bottom: 0;
 }
 
 .indicators-list-1 {
